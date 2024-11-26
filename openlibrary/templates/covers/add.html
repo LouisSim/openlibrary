@@ -49,7 +49,10 @@ $if doc.type.key == "/type/work":
         <label for="coverFile">$_("Choose a JPG, GIF or PNG on your computer")</label>
     </div>
     <div class="input">
-        <input type="file" name="file" id="coverFile" value="" accept=".jpg, .jpeg, .gif, .png" required/>
+        <div class="drop-zone">
+            <span class="drop-zone__prompt">Drop files here or click to upload</span>
+            <input type="file" name="file" id="coverFile" class="drop-zone__input" value="" accept=".jpg, .jpeg, .gif, .png" required/>
+        </div>
         <button type="submit" class="cta-btn cta-btn--vanilla">$_("Upload")</button>
     </div>
 </form>
